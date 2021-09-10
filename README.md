@@ -354,7 +354,7 @@ import re
 <str>   = re.sub(<regex>, new, text, count=0)  # Substitutes all occurrences with 'new'.
 <list>  = re.findall(<regex>, text)            # Returns all occurrences as strings.
 <list>  = re.split(<regex>, text, maxsplit=0)  # Use brackets in regex to include the matches.
-<Match> = re.search(<regex>, text)             # Searches for first occurrence of the pattern.
+<Match> = re.search(<regex>, text)             # Searches for first occurrence of the pattern, returns the result 符合正则表达式的部分
 <Match> = re.match(<regex>, text)              # Searches only at the beginning of the text.
 <iter>  = re.finditer(<regex>, text)           # Returns all occurrences as match objects.
 ```
@@ -365,6 +365,7 @@ import re
 * **Argument `'flags=re.DOTALL'` makes dot also accept the `'\n'`.**
 * **Use `r'\1'` or `'\\1'` for backreference.**
 * **Add `'?'` after an operator to make it non-greedy.**
+* **针对string操作的一种逻辑公式，来处理文本和数据
 
 ### Match Object
 ```python
